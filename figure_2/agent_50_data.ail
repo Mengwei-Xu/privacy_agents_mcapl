@@ -1,0 +1,9 @@
+mas.file = /src/examples/gwendolen/privacy/figure_2/agent_50_data.gwen
+mas.builder = gwendolen.GwendolenMASBuilder
+
+env = gwendolen.privacy.figure_2.AgentEnvSim
+
+//log.info = ail.mas.DefaultEnvironment
+//log.format = brief
+//log.fine = ail.semantics.AILAgent
+//pretty = ail

@@ -1,0 +1,71 @@
+GWENDOLEN
+
+:name: agent
+
+:Initial Beliefs:
+
+:Initial Goals:
+
+:Plans:
+
++.received(:tell, B) : {True} <- +B;
+
++request(X,Y) : {True} <- +!data_requirement(X,Y) [perform];
+
++!data_requirement(X,Y) [perform] : {B false} <- +action1(X), .send(user, :perform, action1(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action2(X), .send(user, :perform, action2(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action3(X), .send(user, :perform, action3(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action4(X), .send(user, :perform, action4(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action5(X), .send(user, :perform, action5(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action6(X), .send(user, :perform, action6(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action7(X), .send(user, :perform, action7(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action8(X), .send(user, :perform, action8(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action9(X), .send(user, :perform, action9(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action10(X), .send(user, :perform, action10(X));
+
+
++!data_requirement(X,Y) [perform] : {B false} <- +action11(X), .send(user, :perform, action11(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action12(X), .send(user, :perform, action12(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action13(X), .send(user, :perform, action13(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action14(X), .send(user, :perform, action14(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action15(X), .send(user, :perform, action15(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action16(X), .send(user, :perform, action16(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action17(X), .send(user, :perform, action17(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action18(X), .send(user, :perform, action18(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action19(X), .send(user, :perform, action19(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action20(X), .send(user, :perform, action20(X));
+
+
++!data_requirement(X,Y) [perform] : {B false} <- +action21(X), .send(user, :perform, action21(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action22(X), .send(user, :perform, action22(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action23(X), .send(user, :perform, action23(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action24(X), .send(user, :perform, action24(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action25(X), .send(user, :perform, action25(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action26(X), .send(user, :perform, action26(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action27(X), .send(user, :perform, action27(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action28(X), .send(user, :perform, action28(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action29(X), .send(user, :perform, action29(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action30(X), .send(user, :perform, action30(X));
+
++!data_requirement(X,Y) [perform] : {B false} <- +action31(X), .send(user, :perform, action31(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action32(X), .send(user, :perform, action32(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action33(X), .send(user, :perform, action33(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action34(X), .send(user, :perform, action34(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action35(X), .send(user, :perform, action35(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action36(X), .send(user, :perform, action36(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action37(X), .send(user, :perform, action37(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action38(X), .send(user, :perform, action38(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action39(X), .send(user, :perform, action39(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action40(X), .send(user, :perform, action40(X));
+
+
++!data_requirement(X,Y) [perform] : {B false} <- +action41(X), .send(user, :perform, action41(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action42(X), .send(user, :perform, action42(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action43(X), .send(user, :perform, action43(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action44(X), .send(user, :perform, action44(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action45(X), .send(user, :perform, action45(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action46(X), .send(user, :perform, action46(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action47(X), .send(user, :perform, action47(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action48(X), .send(user, :perform, action48(X));
++!data_requirement(X,Y) [perform] : {B false} <- +action49(X), .send(user, :perform, action49(X));
++!data_requirement(X,Y) [perform] : {True} <- +action50(X), .send(user, :perform, action50(X));
