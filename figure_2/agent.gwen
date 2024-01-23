@@ -1,0 +1,15 @@
+GWENDOLEN
+
+:name: agent
+
+:Initial Beliefs:
+
+:Initial Goals:
+
+:Plans:
+
++.received(:tell, B) : {True} <- +B;
+
++request(X,Y) : {True} <- +!data_requirement(X,Y) [perform];
+
++!data_requirement(X,Y) [perform] : {True} <- +action(X), .send(user, :perform, action50(X));

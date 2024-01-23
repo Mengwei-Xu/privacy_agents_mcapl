@@ -1,0 +1,25 @@
+GWENDOLEN
+
+:name: agent
+
+:Initial Beliefs:
+
+:Initial Goals:
+
+:Plans:
+
++.received(:tell, B) : {True} <- +B;
+
++request(X,Y) : {True} <- +!data_requirement(X,Y) [perform];
+
++!data_requirement(data1,vibe) [perform] : {True} <- +decline(data1), .send(user, :perform, decline(data1));
++!data_requirement(data2,vibe) [perform] : {True} <- +decline(data2), .send(user, :perform, decline(data2));
++!data_requirement(data3,vibe) [perform] : {True} <- +decline(data3), .send(user, :perform, decline(data3));
+
++!data_requirement(data4,vibe) [perform] : {True} <-  +substitute(data4, data5), .send(user, :perform, substitute(data4, data5));
+
++!data_requirement(data6,vibe) [perform] : {B request(data7,vibe)} <- +decline(data6), .send(user, :perform, decline(data6));
+
++!data_requirement(data8,vibe) [perform] : {B request(data9,vibe), B data(data10,vibe)} <- +decline(data8), .send(user, :perform, decline(data8));
+
++!data_requirement(X,Y) [perform] : {True} <- +approve(X), .send(user, :perform, approve(X));

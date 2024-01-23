@@ -1,0 +1,25 @@
+GWENDOLEN
+
+:name: agent
+
+:Initial Beliefs:
+
+:Initial Goals:
+
+:Plans:
+
++.received(:tell, B) : {True} <- +B;
+
++request(X,Y) : {True} <- +!data_requirement(X,Y) [perform];
+
++!data_requirement(marital_status,vibe) [perform] : {True} <- +decline(marital_status), .send(user, :perform, decline(marital_status));
++!data_requirement(occupation,vibe) [perform] : {True} <- +decline(occupation), .send(user, :perform, decline(occupation));
++!data_requirement(education,vibe) [perform] : {True} <- +decline(education), .send(user, :perform, decline(education));
+
++!data_requirement(dob,vibe) [perform] : {True} <- +substitute(dob, age), .send(user, :perform, substitute(dob, age));
+
++!data_requirement(gps,vibe) [perform] : {B request(home_address,vibe)} <- +decline(gps), .send(user, :perform, decline(gps));
+
++!data_requirement(bmi,vibe) [perform] : {B request(dob,vibe), B request(gender,vibe), B workout_plan(present), B diet_recommendations(present), B daily_physical_activities(monitored)} <- +decline(bmi), .send(user, :perform, decline(bmi));
+
++!data_requirement(X,Y) [perform] : {True} <- +approve(X), .send(user, :perform, approve(X));
